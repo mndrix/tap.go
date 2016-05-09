@@ -47,6 +47,6 @@ func (t *T) Check(function interface{}, description string) {
 }
 
 // return number of completed tests
-func (t *T) Count() {
+func (t *T) Count() int {
 	return t.nextTestNumber - 1
 }
