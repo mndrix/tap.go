@@ -50,3 +50,8 @@ func (t *T) Check(function interface{}, description string) {
 func (t *T) Count() int {
 	return t.nextTestNumber - 1
 }
+
+// generates plan string based on number of tests ran
+func (t *T) AutoPlan() {
+	fmt.Printf("1..%d\n", t.nextTestNumber-1)
+}
